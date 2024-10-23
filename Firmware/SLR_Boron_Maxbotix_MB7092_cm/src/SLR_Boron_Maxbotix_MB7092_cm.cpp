@@ -1,10 +1,6 @@
-/******************************************************/
-//       THIS IS A GENERATED FILE - DO NOT EDIT       //
-/******************************************************/
-
 /* 
- * Project myProject
- * Author: Your Name
+ * Project lab6_water_level_sensor
+ * Author: Group 4
  * Date: 
  * For comprehensive documentation and examples, please visit:
  * https://docs.particle.io/firmware/best-practices/firmware-template/
@@ -80,7 +76,8 @@ void setup(void) {
     Particle.connect();
   }
   else{
-    Cellular.off(); // turn off cellular for prelim testing (uncomment)
+    Particle.disconnect();
+    WiFi.off(); // turn off cellular for prelim testing (uncomment)
   }
 
   // delay(5000); // to see response from begin command
